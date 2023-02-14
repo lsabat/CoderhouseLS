@@ -6,22 +6,26 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-h1{
-    color: blue;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 .header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-}
-.section-index{
-    background-color: rgba(235, 115, 115, 1);
-    margin:0px;
+    z-index: 1;
 }
 
-.section-index ul{
+/* Barra navegacion Top */
+
+
+.navtop{
+    background-color: rgba(235, 115, 115, 1);
+    margin:0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+}
+.navtop ul{
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -29,23 +33,64 @@ h1{
     justify-content: flex-end;
     align-items: center;
 }
-.section-index ul li{
+
+.navtop img {
+    display: flex;
+    align-items: center;
+
+}
+.navtop ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navtop ul li{
     text-decoration: none;
     list-style-type: none;
     padding: 4px;
     margin: 10px;
+
 }
-.section-index ul li a{
+.navtop ul li a{
     color: black;
     text-decoration: none;
     padding: 2px;
 }
 
-.section-index ul li a:hover{
+.navtop ul li a:hover{
     color: white;
     text-decoration: none;
     padding: 2px;
 }
+
+form {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    width:500px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+
+/* Barra Negavacion down */
+
 .section2-index{
     background-color: rgba(255, 240, 0, 1);
 }
@@ -73,39 +118,105 @@ h1{
     padding: 2px;
 }
 
-.main div{
+#carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin: 140px 0px 20px 0px;
+  }
+  
+  .slides {
     display: flex;
-    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: slide 20s infinite;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
     align-items: center;
-    margin: 20px;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .img-carousel {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 
+  /* Publicaciones */
+
+.section3{
+    margin-top: 30px;
 }
-.main div img{
-    margin-top: 120px;
-
-}
-
 .section3 div{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 15px;
 }
+
 .section3 div div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.section3 div div a{
-    margin: 30px;
-    color: black;
+
+.buy-button {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: bold;
     background-color: green;
-    text-decoration: none;
-    border: solid 2px black;
-    padding: 2px 4px;
-    border-radius: 5px;
-}
+    color: white;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: gray;
+  }
+  
+  .buy-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  
+  .see-button {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: gray
+  }
+  
+  .see-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+/* Footer */
 
 footer{
     background-color: rgba(144, 50, 132, 0.2);
     padding: 10px;
+    margin-top: 50px;
 }
