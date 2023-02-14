@@ -67,12 +67,12 @@
     padding: 2px;
 }
 
-form {
+.navtop form {
     display: flex;
     align-items: center;
   }
   
-  input[type="text"] {
+  .navtop form input[type="text"] {
     width:500px;
     padding: 10px;
     font-size: 16px;
@@ -80,7 +80,7 @@ form {
     border-radius: 5px 0 0 5px;
   }
   
-  button[type="submit"] {
+  .navtop form button[type="submit"] {
     padding: 10px 20px;
     font-size: 16px;
     background-color: lightgray;
@@ -117,6 +117,10 @@ form {
     text-decoration: none;
     padding: 2px;
 }
+
+/* FIN BARRA DE NAVEGACION */
+
+/* INICIO PUBLICACIONES */
 
 #carousel {
     position: relative;
