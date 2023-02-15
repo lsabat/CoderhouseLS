@@ -5,9 +5,180 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/styleaccesories.css">
+    <!-- <script src="accesories.js"></script> -->
 </head>
 <body>
-    <h1>PAGINA INICIAR SALE EN PROGRESO</h1>
-    <a href="../index.html">Volve al inicio</a>
+  <header class="header">
+    <nav>
+        <div class="navtop">
+                <img src="" alt="Logo">
+                <form>
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Buscar</button>
+                </form>
+                <ul>
+                    <li><a href="./views/registrate.html">Registrate</a></li>
+                    <li><a href="./views/iniciarsesion.html">Inicia Sesion</a></li>
+                </ul>
+        </div>
+        <div class="section2-index">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./views/marcas.html">Marcas</a></li>
+                <li><a href="./views/sale.html">Sale</a></li>
+                <li><a href="./views/accesorios.html">Accesorios</a></li>
+                <li><a href="">Mujer</a></li>
+                <li><a href="">Hombre</a></li>
+                <li><a href="">Kids</a></li>
+                <li><a href="./views/deporte.html">Deporte</a></li>
+                <li><a href="">Calzado</a></li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+
+  <h1 class="tituloh1">Sale</h1>
+
+  <!-- PUBLICACIONES -->
+  <div class="grid-container">
+
+    <!-- FILTROS IZQUIERDA -->
+  <div class="filter-container">
+    <h3>Filters</h3>
+    <form>
+      <div class="filter-group">
+        <label for="price-range">Price Range:</label>
+        <input type="range" id="price-range" min="0" max="100" step="5" value="50">
+        <span id="price-value">$50</span>
+      </div>
+      <div class="filter-group">
+        <label for="category">Categoria:</label>
+        <select id="category">
+          <option value="all">Todos</option>
+          <option value="clothing">Deporte</option>
+          <option value="electronics">Accesorios</option>
+          <option value="home">Sale</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="brand">Brand:</label>
+        <input type="checkbox" id="brand-1">
+        <label for="brand-1">Brand 1</label>
+        <input type="checkbox" id="brand-2">
+        <label for="brand-2">Brand 2</label>
+        <input type="checkbox" id="brand-3">
+        <label for="brand-3">Brand 3</label>
+      </div>
+      <button type="submit">Apply Filters</button>
+    </form>
+  </div>
+
+  <!-- Publicaciones -->
+
+  <div class="product-listing">
+    <div class="product-list">
+      <div class="product">
+        <img src="product-1.jpg" alt="Product 1">
+        <h4>Producto 1</h4>
+        <p class="price">$20</p>
+      </div>
+      <div class="product">
+        <img src="product-2.jpg" alt="Product 2">
+        <h4>Producto 2</h4>
+        <p class="price">$30</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 3</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 4</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 5</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 6</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 7</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 8</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 9</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 10</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 11</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 12</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 13</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 14</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 15</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 16</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 17</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 18</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 19</h4>
+        <p class="price">$40</p>
+      </div>
+      <div class="product">
+        <img src="product-3.jpg" alt="Product 3">
+        <h4>Producto 20</h4>
+        <p class="price">$40</p>
+      </div>
+
+  </div>
 </body>
 </html>
