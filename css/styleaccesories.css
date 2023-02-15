@@ -14,6 +14,11 @@
   z-index: 1;
 }
 
+.tituloh1{
+  margin-top: 140px;
+  margin-left: 20px;
+}
+
 /* Barra navegacion Top */
 
 
@@ -125,7 +130,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 300px 1fr;
-  margin-top: 150px;
+  margin-top: 20px;
 }
 
 .filter-container {
@@ -169,7 +174,7 @@ select,
   margin-bottom: 10px;
 }
 
-.filter-group button[type="submit"] {
+.filter-container form button[type="submit"] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -180,7 +185,7 @@ select,
   margin-top: 20px;
 }
 
-button[type="submit"]:hover {
+.filter-container form button[type="submit"]:hover {
   background-color: #3e8e41;
 }
 .product-list {

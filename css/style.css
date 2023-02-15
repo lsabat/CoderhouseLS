@@ -124,22 +124,25 @@
 
 #carousel {
     position: relative;
-    width: 100%;
+    width: 90%;
     height: 400px;
     overflow: hidden;
-    margin: 140px 0px 20px 0px;
+    margin: 140px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .slides {
     display: flex;
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 100%;
     animation: slide 20s infinite;
   }
   
   .slide {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -152,16 +155,19 @@
     height: 100%;
     object-fit: cover;
   }
-  
+
+  #carousel:hover .slides {
+    animation-play-state: paused;
+  }
+
   @keyframes slide {
     0% {
       transform: translateX(0);
     }
-    100% {
-      transform: translateX(-100%);
+    90% {
+      transform: translateX(-180%);
     }
   }
-
   /* Publicaciones */
 
 .section3{
